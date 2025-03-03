@@ -38,7 +38,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    hold-trigger-key-positions = <7 20 33 46 8 21 47 34 61 60 59 9 48 35 22 10 11 12 23 24 25 38 37 36 49 50 51 63 62 27 28 29 30>;
+    hold-trigger-key-positions = <7 20 33 46 8 21 47 34 61 60 59 9 48 35 22 10 11 12 23 24 25 38 37 36 49 50 51 63 62 27 28 29 30 53 54>;
     tapping-term-ms = <150>;
 };
 
@@ -62,7 +62,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         flavor = "tap-preferred";
-        hold-trigger-key-positions = <0 1 44 0 1 2 3 4 13 14 15 16 17 26 27 28 29 30 39 40 41 42 43 53 54 55 5 18 31 56 57 34 35 36 37>;
+        hold-trigger-key-positions = <0 1 44 0 1 2 3 4 13 14 15 16 17 26 27 28 29 30 39 40 41 42 43 53 54 55 5 18 31 56 57 34 35 36 37 62 63>;
     };
 
     behaviors {
@@ -73,11 +73,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE   &kp N1          &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                    &kp MINUS
-&kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                     &kp BSLH
-&kp CAPS    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMI  &kp APOS
-&kp LSHFT   &kp Z           &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                  &kp LEFT_SHIFT
-&kp C_MUTE  &kp LCTRL       &kp LEFT_GUI    &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
+&mt LG(V) LC(V)        &kp N1               &kp N2                                   &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                    &kp MINUS
+&mt_right LA(C) LC(C)  &kp Q                &kp W                                    &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                     &kp BSLH
+&mt_right LC(X) LA(X)  &mt LEFT_GUI A       &mt LEFT_ALT S                           &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMI  &kp APOS
+&mt_right LC(Z) LA(Z)  &kp Z                &kp X                                    &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                  &kp LEFT_SHIFT
+&kp C_MUTE             &mt ENTER LS(ENTER)  &mt LA(K_APPLICATION) RC(K_APPLICATION)  &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
             display-name = "LAYER0";
