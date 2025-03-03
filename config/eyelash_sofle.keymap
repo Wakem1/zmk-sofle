@@ -38,7 +38,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    hold-trigger-key-positions = <7 20 33 46 8 21 47 34 61 60 59 9 48 35 22 10 11 12 23 24 25 38 37 36 49 50 51 63 62>;
+    hold-trigger-key-positions = <7 20 33 46 8 21 47 34 61 60 59 9 48 35 22 10 11 12 23 24 25 38 37 36 49 50 51 63 62 27 28 29 30>;
     tapping-term-ms = <150>;
 };
 
@@ -62,7 +62,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <150>;
         flavor = "tap-preferred";
-        hold-trigger-key-positions = <0 1 44 0 1 2 3 4 13 14 15 16 17 26 27 28 29 30 39 40 41 42 43 53 54 55 5 18 31 56 57>;
+        hold-trigger-key-positions = <0 1 44 0 1 2 3 4 13 14 15 16 17 26 27 28 29 30 39 40 41 42 43 53 54 55 5 18 31 56 57 34 35 36 37>;
     };
 
     behaviors {
