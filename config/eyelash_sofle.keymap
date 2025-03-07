@@ -5,6 +5,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -70,11 +71,11 @@
 
         layer0 {
             bindings = <
-&mt LG(V) LC(V)        &kp N1               &kp N2                                   &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                    &kp MINUS
-&mt_right LA(C) LC(C)  &kp Q                &kp W                                    &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                     &kp BSLH
-&mt_right LC(X) LA(X)  &mt LEFT_GUI A       &mt LEFT_ALT S                           &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMI  &kp APOS
-&mt_right LC(Z) LA(Z)  &kp Z                &kp X                                    &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                  &kp LEFT_SHIFT
-&kp C_MUTE             &mt ENTER LS(ENTER)  &mt LA(K_APPLICATION) RC(K_APPLICATION)  &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
+&mt LG(V) LC(V)        &kp N1               &kp N2           &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                    &kp MINUS
+&mt_right LA(C) LC(C)  &kp Q                &kp W            &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                     &kp BSLH
+&mt_right LC(X) LA(X)  &mt LEFT_GUI A       &mt LEFT_ALT S   &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMI  &kp APOS
+&mt_right LC(Z) LA(Z)  &kp Z                &kp X            &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                  &kp LEFT_SHIFT
+&kp C_MUTE             &mt ENTER LS(ENTER)  &mt F24 RC(F24)  &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
             display-name = "LAYER0";
@@ -152,11 +153,11 @@
 
         Setting {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans             &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &ext_power EP_OFF  &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader        &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans             &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
         };
 
