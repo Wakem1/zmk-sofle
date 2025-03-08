@@ -25,7 +25,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - '&key_repeat'
   - {t: Alt+X, h: Ctl+X}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -51,7 +51,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&kp_on LEFT_SHIFT'
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: 'Sft+$$mdi:keyboard-return$$', h: '$$mdi:keyboard-return$$'}
   - {t: Ctl+F24, h: F24}
@@ -85,11 +85,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - REDO
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
+  - Sft+Ctl+Z
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
@@ -150,11 +150,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+Z
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
