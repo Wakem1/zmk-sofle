@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Ctl+Z
   - Ctl+V
-  - Ctl+C
+  - $$mdi:arrow-up-bold$$
   - Ctl+X
   - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
@@ -99,11 +99,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&kp_on LEFT_SHIFT'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - '&kp_on LEFT_SHIFT'
+  - Ctl+C
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -112,11 +112,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - INS
   - HOME
-  - PG DN
-  - PG UP
+  - PgDn
+  - PgUp
   - END
-  - Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -153,7 +153,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Ctl+Z
   - Ctl+V
-  - Ctl+C
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Ctl+X
   - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
@@ -164,10 +164,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - Ctl+C
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -181,7 +182,6 @@ layers:
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -294,11 +294,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
