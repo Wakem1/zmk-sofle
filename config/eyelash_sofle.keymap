@@ -31,8 +31,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <1500>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <650>;
+    acceleration-exponent = <2>;
 };
 
 &mt {
@@ -90,11 +90,11 @@
 
         Nav {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans         &trans     &trans      &trans     &trans             &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp LC(Z)          &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp LEFT       &kp DOWN   &kp UP      &kp RIGHT  &kp_on LEFT_SHIFT  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp HOME       &kp PG_DN  &kp PG_UP   &kp END    &kp INSERT         &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp ENTER      &kp BSPC   &kp DELETE  &trans     &trans
+&trans  &trans    &trans    &trans       &trans     &trans    &trans  &trans         &trans     &trans      &trans     &trans             &trans
+&trans  &trans    &trans    &key_repeat  &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp LC(Z)          &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL    &kp LSHFT  &trans    &trans  &kp LEFT       &kp DOWN   &kp UP      &kp RIGHT  &kp_on LEFT_SHIFT  &trans
+&trans  &trans    &trans    &trans       &trans     &trans    &trans  &kp HOME       &kp PG_DN  &kp PG_UP   &kp END    &kp INSERT         &trans
+&trans  &trans    &trans    &trans       &trans     &trans    &trans  &kp ENTER      &kp BSPC   &kp DELETE  &trans     &trans
             >;
         };
 
