@@ -57,6 +57,17 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        wake_from_none {
+            bindings = <&none>;
+            key-positions = <35 29>;
+            layers = <9>;
+            timeout-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -104,11 +115,11 @@
 
         Media {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &bt BT_CLR        &trans          &trans             &trans        &trans        &bt BT_CLR_ALL
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans            &trans          &out OUT_TOG       &trans        &trans        &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans            &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT    &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4  &ext_power EP_OFF
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_MUTE         &trans        &trans
+&trans     &trans    &trans    &trans     &trans     &trans    &trans  &bt BT_CLR        &trans          &trans             &trans        &trans        &bt BT_CLR_ALL
+&trans     &trans    &trans    &trans     &trans     &trans    &trans  &trans            &trans          &out OUT_TOG       &trans        &trans        &to 9
+&trans     &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans            &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT    &trans
+&soft_off  &trans    &trans    &trans     &trans     &trans    &trans  &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4  &ext_power EP_OFF
+&trans     &trans    &trans    &trans     &trans     &trans    &trans  &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_MUTE         &trans        &trans
             >;
         };
 
@@ -152,13 +163,13 @@
             >;
         };
 
-        layer_9 {
+        none {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
         };
     };
