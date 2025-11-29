@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
+  - '&key_repeat'
   - {t: Alt+X, h: Ctl+X}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -588,3 +588,9 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
+- p: [48, 49]
+  k: Sft+.
+- p: [47, 48]
+  k: Sft+,
+- p: [50, 49]
+  k: Sft+/
