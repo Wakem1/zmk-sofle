@@ -37,11 +37,14 @@
     flavor = "balanced";
     tapping-term-ms = <120>;
     quick-tap-ms = <120>;
+    require-prior-idle-ms = <120>;
 };
 
 &lt {
     tapping-term-ms = <120>;
     quick-tap-ms = <120>;
+    require-prior-idle-ms = <120>;
+    flavor = "balanced";
 };
 
 / {
@@ -66,16 +69,19 @@
         rightquarebracket {
             bindings = <&kp LS(PERIOD)>;
             key-positions = <48 49>;
+            require-prior-idle-ms = <120>;
         };
 
         leftsquarebracket {
             bindings = <&kp LS(COMMA)>;
             key-positions = <47 48>;
+            require-prior-idle-ms = <120>;
         };
 
         questionmark {
             bindings = <&kp LS(SLASH)>;
             key-positions = <50 49>;
+            require-prior-idle-ms = <120>;
         };
     };
 
