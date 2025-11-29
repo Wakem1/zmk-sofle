@@ -39,7 +39,10 @@
     quick-tap-ms = <120>;
 };
 
-&lt { tapping-term-ms = <120>; };
+&lt {
+    tapping-term-ms = <120>;
+    quick-tap-ms = <120>;
+};
 
 / {
     kp_on: kp_on {
@@ -59,6 +62,21 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        rightquarebracket {
+            bindings = <&kp LS(PERIOD)>;
+            key-positions = <48 49>;
+        };
+
+        leftsquarebracket {
+            bindings = <&kp LS(COMMA)>;
+            key-positions = <47 48>;
+        };
+
+        questionmark {
+            bindings = <&kp LS(SLASH)>;
+            key-positions = <50 49>;
+        };
     };
 
     keymap {
@@ -67,7 +85,7 @@
         layer0 {
             bindings = <
 &mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7             &kp N8               &kp N9           &kp N0              &kp MINUS
-&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U              &kp I                &kp O            &kp P               &kp LEFT_BRACKET
+&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U              &kp I                &kp O            &kp P               &key_repeat
 &mt LC(X) LA(X)  &mt LEFT_GUI A       &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp APOS
 &mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp LEFT_SHIFT
 &kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE    &lt 7 DELETE         &kp RIGHT_SHIFT  &mo 8
