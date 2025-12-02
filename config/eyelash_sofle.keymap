@@ -85,11 +85,13 @@
         rightbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <48 49>;
+            require-prior-idle-ms = <120>;
         };
 
         leftbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <47 48>;
+            require-prior-idle-ms = <120>;
         };
 
         questionmark {
@@ -101,6 +103,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <21 34>;
+            require-prior-idle-ms = <120>;
         };
 
         minus {
