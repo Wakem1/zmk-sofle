@@ -38,8 +38,6 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <170>;
     require-prior-idle-ms = <120>;
-    hold-trigger-key-positions = <59 46 47 49 50 51 59 60 61 62 63 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 60 61 62 63>;
-    hold-trigger-on-release;
 };
 
 &lt {
@@ -63,8 +61,6 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        hold-trigger-key-positions = <0 1 2 3 0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 53 54 55 56 57>;
-        hold-trigger-on-release;
         tapping-term-ms = <200>;
         quick-tap-ms = <170>;
         require-prior-idle-ms = <120>;
@@ -85,11 +81,13 @@
         rightbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <48 49>;
+            require-prior-idle-ms = <120>;
         };
 
         leftbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <47 48>;
+            require-prior-idle-ms = <120>;
         };
 
         questionmark {
@@ -101,6 +99,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <21 34>;
+            require-prior-idle-ms = <120>;
         };
 
         minus {
