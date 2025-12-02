@@ -594,3 +594,21 @@ combos:
   k: {t: '[', s: '{'}
 - p: [20, 33]
   k: ^
+- p: [33, 46]
+  k: _
+- p: [21, 22]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [22, 23]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [14, 15]
+  k: $$mdi:keyboard-esc$$
+- p: [41, 42]
+  k: Ctl+C
+- p: [42, 43]
+  k: Ctl+V
+- p: [41, 43]
+  k: Ctl+X
+- p: [18, 31]
+  k: '%'
+- p: [31, 44]
+  k: '~'
