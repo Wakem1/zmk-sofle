@@ -80,22 +80,21 @@
             key-positions = <14 28 40>;
         };
 
-        rightquarebracket {
-            bindings = <&kp LS(PERIOD)>;
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <48 49>;
             require-prior-idle-ms = <120>;
         };
 
-        leftsquarebracket {
-            bindings = <&kp LS(COMMA)>;
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <47 48>;
             require-prior-idle-ms = <120>;
         };
 
-        questionmark {
-            bindings = <&kp LS(SLASH)>;
-            key-positions = <50 49>;
-            require-prior-idle-ms = <120>;
+        caret_ju {
+            bindings = <&kp CARET>;
+            key-positions = <20 33>;
         };
     };
 
