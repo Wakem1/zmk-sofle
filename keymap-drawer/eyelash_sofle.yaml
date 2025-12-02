@@ -642,3 +642,13 @@ combos:
 - p: [35, 36]
   k: '>'
   l: [Nav]
+- p: [47, 48]
+  k: '{'
+  l: [Nav]
+- p: [49, 48]
+  k: '}'
+  l: [Nav]
+- p: [34, 35]
+  k: {t: (, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+- p: [35, 36]
+  k: {t: ), h: 'Ctl+$$mdi:apple-keyboard-option$$'}
