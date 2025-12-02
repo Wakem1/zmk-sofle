@@ -95,6 +95,59 @@
         caret_ju {
             bindings = <&kp CARET>;
             key-positions = <20 33>;
+            require-prior-idle-ms = <120>;
+        };
+
+        underscore_hn {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 46>;
+            require-prior-idle-ms = <120>;
+        };
+
+        backspace_ui {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
+            require-prior-idle-ms = <120>;
+        };
+
+        del_io {
+            bindings = <&kp DEL>;
+            key-positions = <22 23>;
+            require-prior-idle-ms = <120>;
+        };
+
+        Esc_we {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 15>;
+            require-prior-idle-ms = <120>;
+        };
+
+        copy_xc {
+            bindings = <&kp LC(C)>;
+            key-positions = <41 42>;
+            require-prior-idle-ms = <120>;
+        };
+
+        paste_cv {
+            bindings = <&kp LC(V)>;
+            key-positions = <42 43>;
+        };
+
+        cut_xv {
+            bindings = <&kp LC(X)>;
+            key-positions = <41 43>;
+        };
+
+        o_o {
+            bindings = <&kp PERCENT>;
+            key-positions = <18 31>;
+            require-prior-idle-ms = <120>;
+        };
+
+        tilde_gb {
+            bindings = <&kp TILDE>;
+            key-positions = <31 44>;
+            require-prior-idle-ms = <120>;
         };
     };
 
