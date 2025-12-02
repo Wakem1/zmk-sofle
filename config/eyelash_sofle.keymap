@@ -147,6 +147,11 @@
             key-positions = <31 44>;
             require-prior-idle-ms = <120>;
         };
+
+        plus_uj {
+            bindings = <&kp PLUS>;
+            key-positions = <21 34>;
+        };
     };
 
     keymap {
