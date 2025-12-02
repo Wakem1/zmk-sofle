@@ -152,6 +152,73 @@
             bindings = <&kp PLUS>;
             key-positions = <21 34>;
         };
+
+        minus_jm {
+            bindings = <&kp MINUS>;
+            key-positions = <34 47>;
+        };
+
+        asterisk_ik {
+            bindings = <&kp ASTERISK>;
+            key-positions = <22 35>;
+        };
+
+        divident_k {
+            bindings = <&kp SLASH>;
+            key-positions = <35 48>;
+        };
+
+        and_ol {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <23 36>;
+        };
+
+        pipe_Ldot {
+            bindings = <&kp PIPE>;
+            key-positions = <36 49>;
+        };
+
+        at_ws {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <15 28>;
+        };
+
+        backtick_sx {
+            bindings = <&kp GRAVE>;
+            key-positions = <28 41>;
+        };
+
+        hash_ed {
+            bindings = <&kp HASH>;
+            key-positions = <29 16>;
+        };
+
+        backslash_dc {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <29 42>;
+        };
+
+        dollar_rf {
+            bindings = <&kp DOLLAR>;
+            key-positions = <17 30>;
+        };
+
+        equal_fv {
+            bindings = <&kp EQUAL>;
+            key-positions = <30 43>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <34 35>;
+            layers = <1>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <35 36>;
+            layers = <1>;
+        };
     };
 
     keymap {
