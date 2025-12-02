@@ -600,7 +600,7 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [22, 23]
   k: $$mdi:backspace-reverse-outline$$
-- p: [14, 15]
+- p: [15, 16]
   k: $$mdi:keyboard-esc$$
 - p: [41, 42]
   k: Ctl+C
