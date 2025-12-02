@@ -37,6 +37,8 @@
     flavor = "balanced";
     quick-tap-ms = <170>;
     require-prior-idle-ms = <120>;
+    hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51 59 60 61 62 63>;
+    hold-trigger-on-release;
 };
 
 &lt {
@@ -102,11 +104,11 @@
 
         layer0 {
             bindings = <
-&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7             &kp N8               &kp N9           &kp N0                         &kp MINUS
-&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U              &kp I                &kp O            &kp P                          &key_repeat
-&mt LC(X) LA(X)  &mt_right LMETA A    &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
-&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH                       &kp LEFT_SHIFT
-&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE    &lt 7 DELETE         &kp RIGHT_SHIFT  &mo 8
+&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                         &kp MINUS
+&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                          &key_repeat
+&mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
+&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp FSLH                       &kp LEFT_SHIFT
+&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 ESC           &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 6 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
             display-name = "LAYER0";
