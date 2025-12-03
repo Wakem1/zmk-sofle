@@ -648,5 +648,5 @@ combos:
   k: {t: (, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
 - p: [35, 36]
   k: {t: ), h: 'Ctl+$$mdi:apple-keyboard-option$$'}
-- p: [50, 30]
+- p: [50, 49]
   k: '!'
