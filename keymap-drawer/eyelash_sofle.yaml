@@ -58,9 +58,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-shift$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: '$$mdi:keyboard-tab$$', h: Mouse}
+  - {t: '$$mdi:keyboard-return$$', h: Mouse}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: Num}
+  - {t: '$$mdi:keyboard-tab$$', h: Num}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
   - $$mdi:apple-keyboard-shift$$
