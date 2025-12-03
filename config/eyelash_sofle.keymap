@@ -289,11 +289,11 @@
 
         layer0 {
             bindings = <
-&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                         &kp MINUS
-&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                          &key_repeat
-&mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
-&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &question_2_exclamation        &kp LEFT_SHIFT
-&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 LEFT_SHIFT    &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 5 ENTER  &sticky_shift_morph      &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
+&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6     &kp N7                   &kp N8                     &kp N9                 &kp N0                         &kp MINUS
+&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U                    &kp I                      &kp O                  &kp P                          &key_repeat
+&mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H      &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
+&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M                    &kp COMMA                  &kp DOT                &question_2_exclamation        &kp LEFT_SHIFT
+&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 LEFT_SHIFT    &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 5 TAB  &sticky_shift_morph      &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
             display-name = "LAYER0";
