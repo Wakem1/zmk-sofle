@@ -105,13 +105,15 @@
         backspace_ui {
             bindings = <&kp BACKSPACE>;
             key-positions = <21 22>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <170>;
+            timeout-ms = <30>;
         };
 
         del_io {
             bindings = <&kp DEL>;
             key-positions = <22 23>;
-            require-prior-idle-ms = <120>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
         };
 
         Esc_we {
@@ -210,26 +212,22 @@
 
         less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <34 35>;
-            layers = <1>;
+            key-positions = <34 35 60>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <35 36>;
-            layers = <1>;
+            key-positions = <35 36 60>;
         };
 
         left_brace_nav {
             bindings = <&kp LBRC>;
-            key-positions = <47 48>;
-            layers = <1>;
+            key-positions = <47 48 60>;
         };
 
         right_brace_nav {
             bindings = <&kp LS(RIGHT_BRACE)>;
-            key-positions = <49 48>;
-            layers = <1>;
+            key-positions = <49 48 60>;
         };
 
         mod_tap_combo_JK {
