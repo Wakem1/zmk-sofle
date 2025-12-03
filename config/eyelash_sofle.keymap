@@ -242,7 +242,7 @@
 
         exclamation_shift_question {
             bindings = <&kp EXCL>;
-            key-positions = <50 30>;
+            key-positions = <50 49>;
             timeout-ms = <70>;
         };
     };
