@@ -73,7 +73,7 @@
         bindings = <&kp>;
         #binding-cells = <1>;
         quick-release;
-        release-after-ms = <120>;
+        release-after-ms = <500>;
     };
 
     sticky_shift_lt: sticky_shift_lt {
