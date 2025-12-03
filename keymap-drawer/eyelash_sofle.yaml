@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Mouse}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: Num}
-  - {t: '$$mdi:backspace$$', h: Num}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
   - $$mdi:apple-keyboard-shift$$
   - Setting
@@ -386,7 +386,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -652,8 +652,5 @@ combos:
   l: [LAYER0, Num]
 - p: [50, 49]
   k: '!'
-- p: [30, 50]
-  k: X
-  l: [LAYER0]
 - p: [30, 34]
   k: $$mdi:alpha-w-box$$
