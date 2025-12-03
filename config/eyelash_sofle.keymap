@@ -233,17 +233,26 @@
         mod_tap_combo_JK {
             bindings = <&mt_right LC(LEFT_SHIFT) LEFT_PARENTHESIS>;
             key-positions = <34 35>;
+            layers = <0 5>;
         };
 
         mod_tap_combo_KL {
             bindings = <&mt_right LC(RIGHT_ALT) RIGHT_PARENTHESIS>;
             key-positions = <35 36>;
+            layers = <0 5>;
         };
 
         exclamation_shift_question {
             bindings = <&kp EXCL>;
             key-positions = <50 49>;
             timeout-ms = <70>;
+        };
+
+        question_mark_punish {
+            bindings = <&kp X>;
+            key-positions = <30 50>;
+            timeout-ms = <300>;
+            layers = <0>;
         };
     };
 
@@ -264,11 +273,11 @@
 
         Nav {
             bindings = <
-&trans  &trans       &trans    &trans     &trans     &trans    &trans  &trans             &trans     &trans         &trans       &trans     &trans
-&trans  &kp F22      &kp F23   &kp F24    &trans     &trans    &trans  &kp LS(LC(Z))      &kp LC(V)  &kp UP         &kp LC(X)    &kp LC(Z)  &trans
-&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp_on LEFT_SHIFT  &kp LEFT   &kp DOWN       &kp RIGHT    &kp LC(C)  &trans
-&trans  &key_repeat  &trans    &trans     &trans     &trans    &trans  &kp INS            &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-&trans  &trans       &trans    &trans     &trans     &trans    &trans  &kp ENTER          &kp BSPC   &kp DELETE     &trans       &trans
+&trans  &trans       &trans    &trans     &trans     &trans    &trans  &trans         &trans     &trans         &trans       &trans     &trans
+&trans  &kp F22      &kp F23   &kp F24    &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(V)  &kp UP         &kp LC(X)    &kp LC(Z)  &trans
+&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &caps_word     &kp LEFT   &kp DOWN       &kp RIGHT    &kp LC(C)  &trans
+&trans  &key_repeat  &trans    &trans     &trans     &trans    &trans  &kp INS        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+&trans  &trans       &trans    &trans     &trans     &trans    &trans  &kp ENTER      &kp BSPC   &kp DELETE     &trans       &trans
             >;
         };
 
