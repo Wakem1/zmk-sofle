@@ -47,13 +47,6 @@
 };
 
 / {
-    kp_on: kp_on {
-        compatible = "zmk,behavior-key-toggle";
-        label = "KP_ON";
-        #binding-cells = <1>;
-        toggle-mode = "flip";
-    };
-
     mt_right: mt_right {
         compatible = "zmk,behavior-hold-tap";
         label = "MT_RIGHT";
@@ -67,24 +60,50 @@
         hold-trigger-on-release;
     };
 
-    sticky_shift: sticky_shift {
-        compatible = "zmk,behavior-sticky-key";
-        label = "STICKY_SHIFT";
-        bindings = <&kp>;
-        #binding-cells = <1>;
-        quick-release;
-        release-after-ms = <500>;
-    };
-
     sticky_shift_lt: sticky_shift_lt {
         compatible = "zmk,behavior-hold-tap";
         label = "STICKY_SHIFT_LT";
-        bindings = <&mo>, <&sticky_shift>;
+        bindings = <&kp>, <&sk>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
         flavor = "balanced";
-        hold-trigger-on-release;
+        tapping-term-ms = <200>;
+    };
+
+    sticky_shift_morph: sticky_shift_morph {
+        compatible = "zmk,behavior-mod-morph";
+        label = "STICKY_SHIFT_MORPH";
+        bindings = <&sticky_shift_lt LEFT_SHIFT LEFT_SHIFT>, <&caps_word>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    left_round_bracket_2_square: left_round_bracket_2_square {
+        compatible = "zmk,behavior-mod-morph";
+        label = "LEFT_ROUND_BRACKET_2_SQUARE";
+        bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    right_bracket_2_square: right_bracket_2_square {
+        compatible = "zmk,behavior-mod-morph";
+        label = "RIGHT_BRACKET_2_SQUARE";
+        bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    question_2_exclamation: question_2_exclamation {
+        compatible = "zmk,behavior-mod-morph";
+        label = "QUESTION_2_EXCLAMATION";
+        bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
     };
 
     behaviors {
@@ -268,16 +287,10 @@
             timeout-ms = <70>;
         };
 
-        question_mark_punish {
-            bindings = <&kp X>;
-            key-positions = <30 50>;
-            timeout-ms = <300>;
-            layers = <0>;
-        };
-
         cap_word_fj {
             bindings = <&caps_word>;
             key-positions = <30 34>;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -286,11 +299,11 @@
 
         layer0 {
             bindings = <
-&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3                         &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                         &kp MINUS
-&mt LA(C) LC(C)  &kp Q                &kp W           &kp E                          &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                          &key_repeat
-&mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT S  &mt LEFT_CONTROL D             &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
-&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C                          &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp QUESTION                   &kp LEFT_SHIFT
-&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &sticky_shift_lt 4 LEFT_SHIFT  &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 5 ENTER  &lt 5 BACKSPACE          &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
+&mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5       &kp UP_ARROW     &kp N6       &kp N7                   &kp N8                     &kp N9                 &kp N0                         &kp MINUS
+&mt LA(C) LC(C)  &kp Q                &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y        &kp U                    &kp I                      &kp O                  &kp P                          &key_repeat
+&mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H        &mt_right RIGHT_SHIFT J  &mt_right RIGHT_CONTROL K  &mt_right RIGHT_ALT L  &mt_right RIGHT_GUI SEMICOLON  &kp APOS
+&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N        &kp M                    &kp COMMA                  &kp DOT                &kp QUESTION                   &kp LEFT_SHIFT
+&kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 LEFT_SHIFT    &lt 1 SPACE       &lt 2 TAB    &kp ENTER        &lt 5 ENTER  &sticky_shift_morph      &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
             display-name = "LAYER0";
