@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - '?'
+  - {t: '?', s: '!'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: 'Sft+$$mdi:keyboard-return$$', h: '$$mdi:keyboard-return$$'}
@@ -645,12 +645,8 @@ combos:
 - p: [49, 48, 60]
   k: Sft+}
 - p: [34, 35]
-  k: {t: (, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  k: {t: (, h: 'Sft+$$mdi:apple-keyboard-control$$', s: <}
   l: [LAYER0, Num]
 - p: [35, 36]
-  k: {t: ), h: 'Ctl+$$mdi:apple-keyboard-option$$'}
+  k: {t: ), h: 'Ctl+$$mdi:apple-keyboard-option$$', s: '>'}
   l: [LAYER0, Num]
-- p: [50, 49]
-  k: '!'
-- p: [30, 34]
-  k: $$mdi:alpha-w-box$$
