@@ -99,7 +99,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&kp_on LEFT_SHIFT'
+  - $$mdi:alpha-w-box$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -646,7 +646,12 @@ combos:
   k: Sft+}
 - p: [34, 35]
   k: {t: (, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  l: [LAYER0, Num]
 - p: [35, 36]
   k: {t: ), h: 'Ctl+$$mdi:apple-keyboard-option$$'}
+  l: [LAYER0, Num]
 - p: [50, 49]
   k: '!'
+- p: [30, 50]
+  k: X
+  l: [LAYER0]
