@@ -41,7 +41,7 @@
 };
 
 &lt {
-    tapping-term-ms = <120>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <170>;
     flavor = "balanced";
 };
@@ -323,8 +323,8 @@
         Nav {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans         &trans             &trans         &trans          &trans     &trans
-&trans  &kp F22   &kp F23   &kp F24    &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(BACKSPACE)  &kp UP         &kp LC(DELETE)  &kp LC(Z)  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &caps_word     &kp LEFT           &kp DOWN       &kp RIGHT       &kp ENTER  &trans
+&trans  &kp F22   &kp F23   &kp F24    &trans     &trans    &trans  &kp PAGE_UP    &kp LC(BACKSPACE)  &kp UP         &kp LC(DELETE)  &kp LC(Z)  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp PAGE_DOWN  &kp LEFT           &kp DOWN       &kp RIGHT       &kp ENTER  &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp INS        &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP     &kp END    &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp ENTER      &kp BSPC           &kp DELETE     &trans          &trans
             >;
