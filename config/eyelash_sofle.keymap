@@ -263,12 +263,14 @@
 
         left_brace_nav {
             bindings = <&kp LBRC>;
-            key-positions = <47 48 60>;
+            key-positions = <47 48>;
+            layers = <1>;
         };
 
         right_brace_nav {
             bindings = <&kp LS(RIGHT_BRACE)>;
-            key-positions = <49 48 60>;
+            key-positions = <49 48>;
+            layers = <1>;
         };
 
         mod_tap_combo_JK {
@@ -286,6 +288,18 @@
         mod_tap_combo_SD {
             bindings = <&mt LA(LCTRL) TAB>;
             key-positions = <28 29>;
+        };
+
+        greater_than_nav {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <35 36>;
+            layers = <1>;
+        };
+
+        less_than_nav {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <34 35>;
+            layers = <1>;
         };
     };
 
