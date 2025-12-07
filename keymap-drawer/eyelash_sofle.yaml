@@ -640,10 +640,12 @@ combos:
   k: <
 - p: [35, 36, 60]
   k: '>'
-- p: [47, 48, 60]
+- p: [47, 48]
   k: '{'
-- p: [49, 48, 60]
+  l: [Nav]
+- p: [49, 48]
   k: Sft+}
+  l: [Nav]
 - p: [34, 35]
   k: {t: (, h: 'Sft+$$mdi:apple-keyboard-control$$', s: <}
   l: [LAYER0, Num]
@@ -652,3 +654,9 @@ combos:
   l: [LAYER0, Num]
 - p: [28, 29]
   k: {t: '$$mdi:keyboard-tab$$', h: 'Alt+$$mdi:apple-keyboard-control$$'}
+- p: [35, 36]
+  k: '>'
+  l: [Nav]
+- p: [34, 35]
+  k: <
+  l: [Nav]
