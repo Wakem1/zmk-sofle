@@ -306,11 +306,11 @@
 
         Nav {
             bindings = <
-&trans  &trans       &trans    &trans     &trans     &trans    &trans  &trans         &trans     &trans         &trans       &trans     &trans
-&trans  &kp F22      &kp F23   &kp F24    &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(V)  &kp UP         &kp LC(X)    &kp LC(Z)  &trans
-&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &caps_word     &kp LEFT   &kp DOWN       &kp RIGHT    &kp LC(C)  &trans
-&trans  &key_repeat  &trans    &trans     &trans     &trans    &trans  &kp INS        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-&trans  &trans       &trans    &trans     &trans     &trans    &trans  &kp ENTER      &kp BSPC   &kp DELETE     &trans       &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans         &trans             &trans         &trans          &trans     &trans
+&trans  &kp F22   &kp F23   &kp F24    &trans     &trans    &trans  &kp LS(LC(Z))  &kp LC(BACKSPACE)  &kp UP         &kp LC(DELETE)  &kp LC(Z)  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &caps_word     &kp LEFT           &kp DOWN       &kp RIGHT       &kp ENTER  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp INS        &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP     &kp END    &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp ENTER      &kp BSPC           &kp DELETE     &trans          &trans
             >;
         };
 
