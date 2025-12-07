@@ -123,12 +123,14 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <48 49>;
             require-prior-idle-ms = <120>;
+            layers = <0>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <47 48>;
             require-prior-idle-ms = <120>;
+            layers = <0>;
         };
 
         caret_ju {
@@ -262,13 +264,13 @@
         };
 
         left_brace_nav {
-            bindings = <&kp LBRC>;
+            bindings = <&kp LEFT_BRACE>;
             key-positions = <47 48>;
             layers = <1>;
         };
 
         right_brace_nav {
-            bindings = <&kp LS(RIGHT_BRACE)>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <49 48>;
             layers = <1>;
         };
