@@ -590,8 +590,10 @@ combos:
   k: '&soft_off'
 - p: [48, 49]
   k: {t: ']', s: '}'}
+  l: [LAYER0]
 - p: [47, 48]
   k: {t: '[', s: '{'}
+  l: [LAYER0]
 - p: [20, 33]
   k: ^
 - p: [33, 46]
@@ -644,7 +646,7 @@ combos:
   k: '{'
   l: [Nav]
 - p: [49, 48]
-  k: Sft+}
+  k: '}'
   l: [Nav]
 - p: [34, 35]
   k: {t: (, h: 'Sft+$$mdi:apple-keyboard-control$$', s: <}
