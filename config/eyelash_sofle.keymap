@@ -282,34 +282,34 @@
             bindings = <&mt_jk_morph>;
             key-positions = <34 35>;
             layers = <0 5>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         mod_tap_combo_KL {
             bindings = <&mt_kl_morph>;
             key-positions = <35 36>;
             layers = <0 5>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         mod_tap_combo_SD {
             bindings = <&mt LA(LCTRL) TAB>;
             key-positions = <28 29>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         greater_than_nav {
             bindings = <&kp GREATER_THAN>;
             key-positions = <35 36>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         less_than_nav {
             bindings = <&kp LESS_THAN>;
             key-positions = <34 35>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
     };
 
