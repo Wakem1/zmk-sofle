@@ -151,8 +151,8 @@
         backspace_ui {
             bindings = <&kp BACKSPACE>;
             key-positions = <21 22>;
-            require-prior-idle-ms = <170>;
-            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            timeout-ms = <40>;
         };
 
         del_io {
