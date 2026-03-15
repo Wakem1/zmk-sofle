@@ -111,9 +111,9 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    comma_morph: comma_morph {
+    comma_semicolon_morph: comma_semicolon_morph {
         compatible = "zmk,behavior-mod-morph";
-        label = "COMMA_MORPH";
+        label = "COMMA_SEMICOLON_MORPH";
         bindings = <&kp COMMA>, <&kp SEMICOLON>;
 
         #binding-cells = <0>;
@@ -339,7 +339,7 @@
 &mt LG(V) LC(V)  &kp N1               &kp N2          &kp N3              &kp N4            &kp N5         &kp UP_ARROW     &kp N6     &kp N7                   &kp N8                     &kp N9                 &kp N0                   &kp MINUS
 &mt LA(C) LC(C)  &kp Q                &kp W           &kp F               &kp P             &kp B          &kp DOWN_ARROW   &kp J      &kp L                    &kp U                      &kp Y                  &kp SQT                  &key_repeat
 &mt LC(X) LA(X)  &mt LMETA A          &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp LEFT_ARROW   &kp M      &mt_right RIGHT_SHIFT N  &mt_right RIGHT_CONTROL E  &mt_right RIGHT_ALT I  &mt_right RIGHT_GUI O    &kp APOS
-&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp D             &kp V          &kp RIGHT_ARROW  &kp K      &kp H                    &comma_morph               &dot2_morph            &question_2_exclamation  &kp LEFT_SHIFT
+&mt LC(Z) LA(Z)  &kp Z                &kp X           &kp C               &kp D             &kp V          &kp RIGHT_ARROW  &kp K      &kp H                    &comma_semicolon_morph     &dot2_morph            &question_2_exclamation  &kp LEFT_SHIFT
 &kp C_MUTE       &mt ENTER LS(ENTER)  &trans          &lt 4 LEFT_SHIFT    &lt 1 SPACE       &lt 2 ENTER    &kp ENTER        &lt 5 TAB  &sticky_shift_morph      &lt 7 DELETE               &kp RIGHT_SHIFT        &mo 8
             >;
 
